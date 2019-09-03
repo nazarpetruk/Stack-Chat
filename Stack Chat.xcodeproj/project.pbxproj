@@ -10,6 +10,7 @@
 		1B317186754166B4538A9223 /* Pods_Stack_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231A668E83DA3407C5FE94B8 /* Pods_Stack_Chat.framework */; };
 		44ADE77B231E9B450006EA3E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ADE77A231E9B450006EA3E /* Constraints.swift */; };
 		44ADE77D231EA4970006EA3E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ADE77C231EA4970006EA3E /* LoginVC.swift */; };
+		44ADE77F231EA8220006EA3E /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ADE77E231EA8220006EA3E /* CreateAccountVC.swift */; };
 		44C0F2B6231D8FD1008B150B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C0F2B5231D8FD1008B150B /* GradientView.swift */; };
 		44DAE890231D690800D2E5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAE88F231D690800D2E5F1 /* AppDelegate.swift */; };
 		44DAE895231D690800D2E5F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DAE893231D690800D2E5F1 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		231A668E83DA3407C5FE94B8 /* Pods_Stack_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stack_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ADE77A231E9B450006EA3E /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		44ADE77C231EA4970006EA3E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		44ADE77E231EA8220006EA3E /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		44C0F2B5231D8FD1008B150B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		44DAE88C231D690800D2E5F1 /* Stack Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stack Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DAE88F231D690800D2E5F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				44DAE8A9231D765600D2E5F1 /* ChatVC.swift */,
 				44DAE8AB231D769D00D2E5F1 /* ChannelVC.swift */,
 				44ADE77C231EA4970006EA3E /* LoginVC.swift */,
+				44ADE77E231EA8220006EA3E /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				44DAE8AC231D769D00D2E5F1 /* ChannelVC.swift in Sources */,
 				44DAE8AA231D765600D2E5F1 /* ChatVC.swift in Sources */,
+				44ADE77F231EA8220006EA3E /* CreateAccountVC.swift in Sources */,
 				44C0F2B6231D8FD1008B150B /* GradientView.swift in Sources */,
 				44DAE890231D690800D2E5F1 /* AppDelegate.swift in Sources */,
 				44ADE77B231E9B450006EA3E /* Constraints.swift in Sources */,
