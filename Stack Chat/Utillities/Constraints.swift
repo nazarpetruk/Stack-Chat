@@ -23,3 +23,7 @@ let USER_EMAIL = "userEmail"
 //MARK: URL
 let BASE_URL = "https://stacky.herokuapp.com/"
 let URL_REGISTER = "\(BASE_URL)account/register"
+let URL_LOGIN = "\(BASE_URL)account/login"
+
+//MARK: Headers
+let HEADER = ["Content-Type" : "application/json; charset=utf-8"]
