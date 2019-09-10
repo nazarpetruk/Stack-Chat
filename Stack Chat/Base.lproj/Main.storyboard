@@ -277,7 +277,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZY-pe-4Jg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZY-pe-4Jg" customClass="RoundedButton" customModule="Stack_Chat" customModuleProvider="target">
                                 <rect key="frame" x="82" y="310" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -285,7 +285,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="5wy-GB-HTw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -321,7 +321,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVV-qU-jls">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVV-qU-jls" customClass="RoundedButton" customModule="Stack_Chat" customModuleProvider="target">
                                 <rect key="frame" x="82" y="812" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -332,6 +332,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="qGy-5S-ULv" eventType="touchUpInside" id="1ht-v8-ieD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obE-u4-Q1R">
                                 <rect key="frame" x="167" y="414" width="80" height="130"/>
@@ -343,6 +346,7 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="chooseAvatarPressed:" destination="qGy-5S-ULv" eventType="touchUpInside" id="xot-FI-KRj"/>
                                     <action selector="createAccountBtnPressed:" destination="oW6-nO-NVC" eventType="touchUpInside" id="0kO-sL-ob3"/>
                                 </connections>
                             </button>
@@ -437,6 +441,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="oW6-nO-NVC" eventType="touchUpInside" id="Jd5-N4-5iQ"/>
+                                    <action selector="pickBGColorPressed:" destination="qGy-5S-ULv" eventType="touchUpInside" id="WQM-3C-Oac"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -461,6 +466,10 @@
                         <viewLayoutGuide key="safeArea" id="0j5-DB-8IS"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="tuq-fn-OaX" id="tJU-SZ-HFP"/>
+                        <outlet property="passwordTxt" destination="s7x-eC-sr7" id="jKk-R5-NOk"/>
+                        <outlet property="userImg" destination="qnO-k1-gQy" id="8Ge-XO-ITI"/>
+                        <outlet property="userNameTxt" destination="W96-47-QV0" id="43V-5n-hr9"/>
                         <segue destination="TBk-dV-3EG" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="a3F-1X-Tn5"/>
                     </connections>
                 </viewController>
