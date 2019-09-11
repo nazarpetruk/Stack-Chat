@@ -29,3 +29,9 @@ let URL_USER_ADD = "\(BASE_URL)user/add"
 
 //MARK: Headers
 let HEADER = ["Content-Type" : "application/json; charset=utf-8"]
+
+//MARK: Color
+let placeholderClr = #colorLiteral(red: 0.3254901961, green: 0.4215201139, blue: 0.7752227187, alpha: 0.5)
+
+//MARK: Notification Cons
+let USER_DATA_CHANGED = Notification.Name("notifUserDataChanged")
