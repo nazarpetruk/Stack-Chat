@@ -118,7 +118,7 @@
                                 <rect key="frame" x="0.0" y="169" width="414" height="598"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="chennelCell" id="y2d-UR-e7R">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="chennelCell" id="y2d-UR-e7R" customClass="CustomCell" customModule="Stack_Chat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y2d-UR-e7R" id="qlK-Vt-bme">
@@ -132,15 +132,28 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#general" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f40-x2-6Au">
+                                                    <rect key="frame" x="20" y="8.5" width="83" height="27"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
+                                                <constraint firstItem="f40-x2-6Au" firstAttribute="centerY" secondItem="qlK-Vt-bme" secondAttribute="centerY" id="1zB-8A-QBW"/>
                                                 <constraint firstItem="y32-Ob-3DG" firstAttribute="centerY" secondItem="qlK-Vt-bme" secondAttribute="centerY" id="4Fd-zS-NrB"/>
+                                                <constraint firstItem="f40-x2-6Au" firstAttribute="firstBaseline" secondItem="y32-Ob-3DG" secondAttribute="firstBaseline" id="51P-OT-Lds"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y32-Ob-3DG" secondAttribute="trailing" constant="20" symbolic="YES" id="HST-js-Log"/>
                                                 <constraint firstItem="y32-Ob-3DG" firstAttribute="leading" secondItem="qlK-Vt-bme" secondAttribute="leading" constant="20" id="OuT-yr-pS9"/>
+                                                <constraint firstItem="f40-x2-6Au" firstAttribute="leading" secondItem="y32-Ob-3DG" secondAttribute="leading" id="ube-8L-qeN"/>
+                                                <constraint firstItem="f40-x2-6Au" firstAttribute="firstBaseline" secondItem="y32-Ob-3DG" secondAttribute="baseline" id="zNv-Rg-cHN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="channelNameLbl" destination="f40-x2-6Au" id="U8a-C9-AV9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -179,6 +192,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="2kz-oH-wRu" id="M1R-x5-bAS"/>
+                        <outlet property="tableView" destination="mWd-6F-FA4" id="IE0-cg-VZN"/>
                         <outlet property="userImg" destination="HLo-PN-FKR" id="m6x-BU-Fhe"/>
                         <segue destination="oW6-nO-NVC" kind="show" identifier="toLogin" id="fRW-9k-rY9"/>
                     </connections>
