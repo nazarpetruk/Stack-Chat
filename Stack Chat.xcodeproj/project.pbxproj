@@ -30,6 +30,8 @@
 		44EFBD2A23292E1500A68AF9 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EFBD2923292E1500A68AF9 /* AvatarCell.swift */; };
 		44EFBD2C232959C200A68AF9 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EFBD2B232959C200A68AF9 /* CircleImage.swift */; };
 		44F6B5D92328061A00346A20 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6B5D82328061A00346A20 /* UserDataService.swift */; };
+		44FF83E4232FDCA40004511C /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF83E2232FDCA40004511C /* AddChannelVC.swift */; };
+		44FF83E5232FDCA40004511C /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FF83E3232FDCA40004511C /* AddChannelVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		44EFBD2923292E1500A68AF9 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		44EFBD2B232959C200A68AF9 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		44F6B5D82328061A00346A20 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		44FF83E2232FDCA40004511C /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
+		44FF83E3232FDCA40004511C /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		B3614E3F5D91096D6D41BAE7 /* Pods-Stack Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stack Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stack Chat/Pods-Stack Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		E051086C68E5493EC6B68FF1 /* Pods-Stack Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stack Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stack Chat/Pods-Stack Chat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +181,7 @@
 				44ADE77E231EA8220006EA3E /* CreateAccountVC.swift */,
 				44EFBD2723292B2900A68AF9 /* AvatarPickerVC.swift */,
 				44E8E7DB232A7559001AC47A /* ProfileVC.swift */,
+				44FF83E2232FDCA40004511C /* AddChannelVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				44E8E7DC232A7559001AC47A /* ProfileVC.xib */,
+				44FF83E3232FDCA40004511C /* AddChannelVC.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FF83E5232FDCA40004511C /* AddChannelVC.xib in Resources */,
 				44E8E7DE232A7559001AC47A /* ProfileVC.xib in Resources */,
 				44DAE89A231D690900D2E5F1 /* LaunchScreen.storyboard in Resources */,
 				44DAE897231D690900D2E5F1 /* Assets.xcassets in Resources */,
@@ -333,6 +340,7 @@
 				44DECCB62327DF9C00CF5C0A /* AuthService.swift in Sources */,
 				44C0F2B6231D8FD1008B150B /* GradientView.swift in Sources */,
 				44DAE890231D690800D2E5F1 /* AppDelegate.swift in Sources */,
+				44FF83E4232FDCA40004511C /* AddChannelVC.swift in Sources */,
 				44EFBD2A23292E1500A68AF9 /* AvatarCell.swift in Sources */,
 				44ADE77B231E9B450006EA3E /* Constants.swift in Sources */,
 				44DAE8A5231D71EE00D2E5F1 /* SWRevealViewController.m in Sources */,

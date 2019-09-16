@@ -32,6 +32,10 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkv-0P-J7Z">
                             <rect key="frame" x="338" y="8" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="Jdr-ie-daH"/>
+                                <constraint firstAttribute="height" constant="28" id="P85-wE-dvc"/>
+                            </constraints>
                             <state key="normal" image="closeButton"/>
                             <connections>
                                 <action selector="closeBtnPressed:" destination="-1" eventType="touchUpInside" id="k3H-Yp-czR"/>
@@ -81,7 +85,9 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Pkv-0P-J7Z" secondAttribute="trailing" constant="8" id="4rZ-sf-yg1"/>
                         <constraint firstItem="oSX-LJ-9vC" firstAttribute="centerX" secondItem="9Px-VG-373" secondAttribute="centerX" id="94U-1X-m2i"/>
+                        <constraint firstItem="Pkv-0P-J7Z" firstAttribute="top" secondItem="9Px-VG-373" secondAttribute="top" constant="8" id="I7r-1T-H4E"/>
                         <constraint firstItem="oSX-LJ-9vC" firstAttribute="centerY" secondItem="9Px-VG-373" secondAttribute="centerY" constant="-20" id="KUz-M5-Ep2"/>
                         <constraint firstAttribute="trailing" secondItem="Pkv-0P-J7Z" secondAttribute="trailing" constant="8" id="QHb-w1-5ws"/>
                         <constraint firstAttribute="height" constant="400" id="hd9-YW-oPp"/>
