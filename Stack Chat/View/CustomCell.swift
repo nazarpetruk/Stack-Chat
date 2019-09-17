@@ -25,7 +25,7 @@ class CustomCell: UITableViewCell {
         }
     }
     func configureCell(channel: Channel){
-        let title = channel.channelDescription ?? ""
+        let title = channel.channelTitle ?? ""
         channelNameLbl.text = "#\(title)"
     }
 

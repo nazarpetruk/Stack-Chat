@@ -19,6 +19,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        spinner.isHidden = true
     }
     
     @IBAction func closePressed(_ sender: Any) {

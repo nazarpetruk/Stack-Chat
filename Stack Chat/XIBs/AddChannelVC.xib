@@ -57,10 +57,10 @@
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HBW-e4-26G">
-                            <rect key="frame" x="62" y="155.5" width="250" height="109"/>
+                            <rect key="frame" x="62" y="168.5" width="250" height="83"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxb-tA-TdS">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxb-tA-TdS">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="17"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="250" id="UiP-aB-eoB"/>
                                     </constraints>
@@ -69,15 +69,15 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdb-rk-d5c">
-                                    <rect key="frame" x="0.0" y="45" width="250" height="2"/>
+                                    <rect key="frame" x="0.0" y="32" width="250" height="2"/>
                                     <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="250" id="C0C-Uj-htJ"/>
                                         <constraint firstAttribute="height" constant="2" id="Tnd-sj-CUw"/>
                                     </constraints>
                                 </view>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wzn-cZ-D5U">
-                                    <rect key="frame" x="0.0" y="62" width="250" height="30"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wzn-cZ-D5U">
+                                    <rect key="frame" x="0.0" y="49" width="250" height="17"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="250" id="jtH-d8-aEI"/>
                                     </constraints>
@@ -86,7 +86,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpf-4r-Nre">
-                                    <rect key="frame" x="0.0" y="107" width="250" height="2"/>
+                                    <rect key="frame" x="0.0" y="81" width="250" height="2"/>
                                     <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="250" id="QwR-E4-6tb"/>

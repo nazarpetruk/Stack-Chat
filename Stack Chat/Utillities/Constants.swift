@@ -41,3 +41,5 @@ let placeholderClr = #colorLiteral(red: 0.3254901961, green: 0.4215201139, blue:
 
 //MARK: Notification Cons
 let USER_DATA_CHANGED = Notification.Name("notifUserDataChanged")
+let NOTF_CHAN_LOADED = Notification.Name("channelIsLoaded")
+let CHANNEL_SELECTED = Notification.Name("channelIsSelected")
