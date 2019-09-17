@@ -15,12 +15,17 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var topLbl: UILabel!
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sendBtn: UIButton!
+    
+    //MARK: Variables
+    var isTyping = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
+        sendBtn.isHidden = true
         
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableView.automaticDimension
@@ -33,6 +38,15 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         NotificationCenter.default.addObserver(self, selector: #selector(userDataDidChanged(_:)), name: USER_DATA_CHANGED, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.channelSelected(_:)), name: CHANNEL_SELECTED, object: nil)
+        SocketService.instance.getMessage { (success) in
+            if success {
+                self.tableView.reloadData()
+                if MessageService.instance.messages.count > 0 {
+                    let indexPAth = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
+                    self.tableView.scrollToRow(at: indexPAth, at: .bottom, animated: false)
+                }
+            }
+        }
         
         if AuthService.instance.isLogged{
             AuthService.instance.findUserByEmail { (success) in
@@ -45,6 +59,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             onLoginGetMessages()
         }else{
             topLbl.text = "Please Log In"
+            tableView.reloadData()
         }
     }
     @objc func channelSelected(_ notif: Notification){
@@ -58,6 +73,19 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         topLbl.text = "#\(channelName)"
         getMessages()
     }
+    
+    @IBAction func messageEditing(_ sender: Any) {
+        if messageTxt.text == ""{
+            isTyping = false
+            sendBtn.isHidden = true
+        }else{
+            if isTyping == false{
+                sendBtn.isHidden = false
+            }
+            isTyping = true
+        }
+    }
+    
     @IBAction func sendMessagePressed(_ sender: Any) {
         if AuthService.instance.isLogged {
             guard let channelId = MessageService.instance.selectedChannel?.id else { return }
