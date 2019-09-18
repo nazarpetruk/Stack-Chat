@@ -86,7 +86,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="twY-3Z-Kbh">
-                                <rect key="frame" x="0.0" y="85" width="414" height="702"/>
+                                <rect key="frame" x="0.0" y="85" width="414" height="692"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="80" id="617-jS-gvX" customClass="MessageCell" customModule="Stack_Chat" customModuleProvider="target">
@@ -145,13 +145,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVK-Wi-Hp1">
+                                <rect key="frame" x="8" y="802" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zN1-8g-sxQ" firstAttribute="leading" secondItem="UrG-0k-0T4" secondAttribute="leading" id="17g-ug-33j"/>
-                            <constraint firstItem="Qzd-hV-Ke3" firstAttribute="top" secondItem="twY-3Z-Kbh" secondAttribute="bottom" constant="20" id="CFr-En-RzJ"/>
+                            <constraint firstItem="Qzd-hV-Ke3" firstAttribute="top" secondItem="twY-3Z-Kbh" secondAttribute="bottom" constant="30" id="CFr-En-RzJ"/>
                             <constraint firstItem="Qzd-hV-Ke3" firstAttribute="leading" secondItem="UrG-0k-0T4" secondAttribute="leading" id="Har-t4-G8f"/>
                             <constraint firstItem="UrG-0k-0T4" firstAttribute="trailing" secondItem="Qzd-hV-Ke3" secondAttribute="trailing" id="PeB-ix-VWQ"/>
+                            <constraint firstItem="VVK-Wi-Hp1" firstAttribute="leading" secondItem="UrG-0k-0T4" secondAttribute="leading" constant="8" id="W4v-9T-HDv"/>
                             <constraint firstItem="zN1-8g-sxQ" firstAttribute="trailing" secondItem="UrG-0k-0T4" secondAttribute="trailing" id="WKc-y9-DLS"/>
                             <constraint firstItem="zN1-8g-sxQ" firstAttribute="top" secondItem="vef-Ok-Okx" secondAttribute="top" id="XEb-Ze-Zqp"/>
                             <constraint firstItem="Qzd-hV-Ke3" firstAttribute="bottom" secondItem="UrG-0k-0T4" secondAttribute="bottom" id="XVe-Lr-SAa"/>
@@ -160,6 +167,7 @@
                             <constraint firstItem="twY-3Z-Kbh" firstAttribute="leading" secondItem="UrG-0k-0T4" secondAttribute="leading" id="bBM-I8-nep"/>
                             <constraint firstItem="UrG-0k-0T4" firstAttribute="trailing" secondItem="twY-3Z-Kbh" secondAttribute="trailing" id="fAr-gh-fJw"/>
                             <constraint firstItem="g0m-LB-MN8" firstAttribute="centerY" secondItem="Qzd-hV-Ke3" secondAttribute="centerY" id="oTf-QR-qJi"/>
+                            <constraint firstItem="Qzd-hV-Ke3" firstAttribute="top" secondItem="VVK-Wi-Hp1" secondAttribute="bottom" constant="5" id="pZm-1J-MIG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UrG-0k-0T4"/>
                     </view>
@@ -169,6 +177,7 @@
                         <outlet property="sendBtn" destination="g0m-LB-MN8" id="yC2-1y-ZPE"/>
                         <outlet property="tableView" destination="twY-3Z-Kbh" id="teV-LP-QBj"/>
                         <outlet property="topLbl" destination="XsB-8i-ovG" id="q8P-KD-dow"/>
+                        <outlet property="typingUserLbl" destination="VVK-Wi-Hp1" id="YXm-WZ-4uD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fd-ir-0Oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
